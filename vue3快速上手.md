@@ -270,7 +270,7 @@ npm run dev
   	console.log('person变化了',newValue,oldValue)
   },{immediate:true,deep:false}) //此处的deep配置不再奏效
   
-  //情况四：监视reactive定义的响应式数据中的某个属性
+  //情况四：监视reactive定义的响应式数据中的某个属性，得用函数返回，没有为啥
   watch(()=>person.job,(newValue,oldValue)=>{
   	console.log('person的job变化了',newValue,oldValue)
   },{immediate:true,deep:true}) 
